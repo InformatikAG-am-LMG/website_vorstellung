@@ -37,10 +37,10 @@
         header::before {
             content: "";
             position: absolute;
-            top: -50px;
-            left: -50px;
-            width: 200px;
-            height: 200px;
+            top: -30px;
+            left: -30px;
+            width: 150px;
+            height: 150px;
             background: linear-gradient(135deg, #ff6600, #0a74da);
             border-radius: 50%;
             animation: pulse 5s infinite alternate;
@@ -68,12 +68,13 @@
         }
 
         section {
-            padding: 50px;
+            padding: 20px;
             text-align: center;
             background-color: #2c2c2c;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             margin: 20px auto;
-            width: 80%;
+            width: 90%;
+            max-width: 800px;
             border-radius: 10px;
         }
 
@@ -85,7 +86,7 @@
 
         .info {
             margin-top: 20px;
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #ccc;
         }
 
@@ -103,11 +104,12 @@
             margin-top: 30px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .tech-icons img {
-            width: 80px;
+            width: 60px;
             transition: transform 0.3s;
         }
 
@@ -139,6 +141,40 @@
             color: #e0e0e0;
         }
 
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header .subheading {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .highlight {
+                font-size: 1.5em;
+            }
+
+            .info {
+                font-size: 1em;
+            }
+
+            .tech-icons img {
+                width: 50px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            .contact a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -171,7 +207,6 @@
     <p class="license">© 2024 Informatik AG am LMGHH <br>Diese Website ist unter einer <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons BY-SA 4.0 Lizenz</a> lizenziert.</p>
     <p class="license">Die Icons stammen von icons8.com</p>
 </footer>
-
 
 </body>
 </html>
